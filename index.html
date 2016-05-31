@@ -24,8 +24,168 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Vim 是什么？</h1>
+					<p class="fragment">
+						Vim 是这个星球上最好的编辑器
+					</p>
+				</section>
+
+				<section>
+					<h2>Vi 和 Vim 的区别与联系</h2>
+					<p class="fragment">
+						Vi是Bill Joy 在1976年开发的一款编辑器，Vi来自Visual这个单词。
+					</p>
+					<p class="fragment">
+						Vim是Bram Moolenaar在1991年首次公开发布的Vi的升级版，意为Vi IMproved。
+					</p>
+				</section>
+
+				<section>
+					<h1>Vim的最大特点</h1>
+					<p  class="fragment">自身功能强大</p>
+					<p  class="fragment">插件超级多，覆盖各个方面</p>
+					<p  class="fragment">可根据自己的需求高度定制</p>
+				</section>
+
+				<section>
+					<h1>为什么要用Vim</h1>
+					<p class="fragment"> 编辑是程序员最常用的操作</p>
+					<p class="fragment"> Vim是编辑效率最高的编辑器</p>
+					<p class="fragment"> 缩短时间，提高效率 </p>
+					<p class="fragment"> 保持思维的连贯性 </p>
+				</section>
+
+				<section>
+					<h1>哪里可以用Vim</h1>
+					<p class="fragment"> Linux/Win下的Terminal/CMD </p>
+					<p class="fragment"> Chrome/Firefox的插件</p>
+					<p class="fragment"> PHPStorm的IdeaVim插件</p>
+				</section>
+
+				<section>
+					<h1>Vim Mode</h1>
+					<p class="fragment"> Normal Mode </p>
+					<p class="fragment"> Insert Mode </p>
+					<p class="fragment"> Visual Mode </p>
+				</section>
+
+				<section>
+					<h1>基本使用之移动举例</h1>
+					<p class="fragment"> 字符/单词/行/句/段落/屏/页/文件 </p>
+					<p class="fragment"> HJKL </p>
+					<p class="fragment"> 行内一步移动到任意位置 </p>
+					<p class="fragment"> 文件内一步移动到目标行 </p>
+					<p class="fragment"> () { } </p>
+				</section>
+
+				<section>
+					<h1>基本使用之编辑举例</h1>
+					<p class="fragment"> i/a  </p>
+					<p class="fragment"> I/A  </p>
+					<p class="fragment"> o/O  </p>
+					<p class="fragment"> d/c  </p>
+				</section>
+
+				<section>
+					<h1>基本使用之块编辑举例</h1>
+					<p> 重构时删除function内所有内容</p>
+					<p> "IndexController@user" 删除""内所有内容</p>
+					<p> "IndexController@user" 删除Index并继续编写</p>
+				</section>
+
+				<section>
+					<h1>寄存器</h1>
+					 <p>基本寄存器yy p</p>
+					 <p>同时使用多个带命名的寄存器</p>
+					<p>Visual模式先选中，然后 "ay 复制，"ap 粘贴，a 为寄存器名，可同时使用多个</p>
+				</section>
+
+				<section>
+					<h1> Vimrc 的基本配置</h1>
+					<p> </p>
+				</section>
+
+
+				<section>
+					<h1> Vim的多屏 </h1>
+					<p> Tab vs Split</p>
+				</section>
+
+				<section>
+					<h1> Vimrc 的基本语法</h1>
+					<p> </p>
+				</section>
+
+				<section>
+					<h1> Vim的书签 </h1>
+					<p> ma 'a</p>
+				</section>
+
+				<section>
+					<h1> Vim文件类型与模板 </h1>
+					<p> </p>
+				</section>
+
+				<section>
+					<h1>Vim文件编码 </h1>
+					<p> </p>
+				</section>
+
+				<section>
+					<h1> Vim格式化文件 </h1>
+					<p> Bom头、换行、Tab </p>
+				</section>
+
+				<section>
+					<h1> 插件的寻找与安装</h1>
+					<p> </p>
+				</section>
+
+				<section>
+					<h1> vim配置文件的管理 </h1>
+					<p> </p>
+				</section>
+
+				<section>
+					<h1> PHP相关的Vim配置 </h1>
+					<p> 语法高亮、手册、缩进、Ctags</p>
+				</section>
+
+				<section>
+					<h1> Vim调用外部命令 </h1>
+					<p> </p>
+				</section>
+
+				<section>
+					<h1>Vimdiff </h1>
+					<p> </p>
+				</section>
+
+				<section>
+					<h1>Vim 搜索 </h1>
+					<p> </p>
+				</section>
+
+				<section>
+					<h1>Vim 删除 </h1>
+					<p> </p>
+				</section>
+
+				<section>
+                    <pre><code data-trim data-noescape>
+                        (def lazy-fib
+                        (concat
+                        [0 1]
+                        <mark>((fn rfib [a b]</mark>
+                        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+                    </code></pre>
+				</section>
+
+				<section data-background-image="./image/1.png" data-background-size="contain">
+				</section>
+
+
 			</div>
 		</div>
 
