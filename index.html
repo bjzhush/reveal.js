@@ -88,6 +88,15 @@
 				</section>
 
 				<section>
+					<h1>Vim 搜索 </h1>
+					<p>/pattern 向上搜索 </p>
+					<p>?pattern 向下搜索 </p>
+					<p>n/N 同方向/反方向继续搜索</p>
+					<p>/^place 仅搜索place开头的内容 </p>
+					<p>更多正则匹配....</p>
+				</section>
+
+				<section>
 					<h1>基本使用之块编辑举例</h1>
 					<p> 重构时删除function内所有内容</p>
 					<p> "IndexController@user" 删除""内所有内容</p>
@@ -103,87 +112,120 @@
 
 				<section>
 					<h1> Vimrc 的基本配置</h1>
-					<p> </p>
+					<p> Vimrc包含了Vim运行时各种可选的及自定义的配置选项</p>
+					<p> .vimrc/_vimrc Linux/Windows</p>
 				</section>
 
+				<section>
+					<h1> Vim Script Language</h1>
+
+                    <pre><code data-trim data-noescape>
+						:h usr_41.txt
+					</code></pre>
+				</section>
 
 				<section>
 					<h1> Vim的多屏 </h1>
-					<p> Tab vs Split</p>
+					<p> Terminal->Tab->Tmux/Screen/Byobu->T/S/B Tab</p>
+					<p> Vim Tab -> Split/Vsplit</p>
 				</section>
 
-				<section>
-					<h1> Vimrc 的基本语法</h1>
-					<p> </p>
-				</section>
 
 				<section>
 					<h1> Vim的书签 </h1>
-					<p> ma 'a</p>
+					<p> m{a-zA-Z}</p>
+					<p> '{a-zA-Z}</p>
+					<p> marks</p>
 				</section>
 
 				<section>
 					<h1> Vim文件类型与模板 </h1>
-					<p> </p>
+                    <pre><code data-trim data-noescape>
+						:filetype
+					</code></pre>
+                    <pre><code data-trim data-noescape>
+						detection:ON plugin:ON indent:ON
+					</code></pre>
+				</section>
+
+				<section>
+					<h1>Tabs</h1>
+					<p>比如定制PHP的tab键</p>
+					<p>ftplugin/php.vim</p>
+					<p>set tabstop=4</p>
+                    <pre><code data-trim data-noescape>
+						:help tabstop
+					</code></pre>
+					<p>Number of spaces that a Tab in the file counts for</p>
+					<p>其它选项如shiftwidth softtabstop expandtab</p>
 				</section>
 
 				<section>
 					<h1>Vim文件编码 </h1>
-					<p> </p>
-				</section>
-
-				<section>
-					<h1> Vim格式化文件 </h1>
-					<p> Bom头、换行、Tab </p>
+					<p> fileencoding:Sets the character encoding for the file of this buffer</p>
+					<p>Vim对于文件编码的识别</p>
+					<p>Vim对于文件编码的转换</p>
+					<p>:set fileencoding=  按Tab</p>
 				</section>
 
 				<section>
 					<h1> 插件的寻找与安装</h1>
-					<p> </p>
-				</section>
+					<p>http://www.vim.org/scripts/ </p>
+                </section>
 
 				<section>
-					<h1> vim配置文件的管理 </h1>
-					<p> </p>
+					<section data-background-image="./image/2.png" data-background-size="contain">
 				</section>
 
 				<section>
 					<h1> PHP相关的Vim配置 </h1>
-					<p> 语法高亮、手册、缩进、Ctags</p>
+					<p>syntax on/custom</p>
+					<p>custom manual</p>
+					<p>custom autoComplete</p>
+					<p>custom Theme</p>
+					<p>custom Doc generator</p>
+					<p>Ctags</p>
+					<p>.....</p>
 				</section>
 
 				<section>
 					<h1> Vim调用外部命令 </h1>
-					<p> </p>
+					<p> :!ls /var/www</p>
+					<p> :r !ls /var/www</p>
 				</section>
 
-				<section>
-					<h1>Vimdiff </h1>
-					<p> </p>
-				</section>
+                <section>
+                    <h1>Vim 组合命令</h1>
+                    <p>:g/s*^$/d 删除所有空行</p>
+                    <p>:g!/^dd/d 删除不含字符串'dd'的行</p>
+					<p>.....</p>
+                </section>
 
-				<section>
-					<h1>Vim 搜索 </h1>
-					<p> </p>
-				</section>
+                <section>
+                    <h1> vim配置文件的管理 </h1>
+                    <p> 吸收别人的好的配置文件</p>
+                    <p> 维护自己的配置文件 </p>
+                    <p> 纳入Git进行控制和维护 </p>
+                </section>
 
-				<section>
-					<h1>Vim 删除 </h1>
-					<p> </p>
-				</section>
+                <section>
+                    <p>怎么学Vim</p>
+                    <p>练习练习再练习</p>
+                    <p>思考思考再思考</p>
+                    <p>只选择自己需要的功能</p>
+                    <p>部分快捷键先记后忘</p>
+                    <p>Vim 101 Hacks.pdf</p>
+                </section>
 
-				<section>
-                    <pre><code data-trim data-noescape>
-                        (def lazy-fib
-                        (concat
-                        [0 1]
-                        <mark>((fn rfib [a b]</mark>
-                        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-                    </code></pre>
-				</section>
+                <section>
+                    <h1>And Linux ?</h1>
+                </section>
 
-				<section data-background-image="./image/1.png" data-background-size="contain">
-				</section>
+					<section>
+						<h1>Thanks to All !</h1>
+						</section>
+
+
 
 
 			</div>
