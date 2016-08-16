@@ -89,31 +89,31 @@
 
 				<section>
 					<h1>Vim 搜索 </h1>
-					<p>/pattern 向上搜索 </p>
-					<p>?pattern 向下搜索 </p>
-					<p>n/N 同方向/反方向继续搜索</p>
-					<p>/^place 仅搜索place开头的内容 </p>
-					<p>更多正则匹配....</p>
+					<p class="fragment">/pattern 向上搜索 </p>
+					<p class="fragment">?pattern 向下搜索 </p>
+					<p class="fragment">n/N 同方向/反方向继续搜索</p>
+					<p class="fragment">/^place 仅搜索place开头的内容 </p>
+					<p class="fragment">更多正则匹配....</p>
 				</section>
 
 				<section>
 					<h1>基本使用之块编辑举例</h1>
-					<p> 重构时删除function内所有内容</p>
-					<p> "IndexController@user" 删除""内所有内容</p>
-					<p> "IndexController@user" 删除Index并继续编写</p>
+					<p class="fragment"> 重构时删除function内所有内容</p>
+					<p class="fragment"> "IndexController@user" 删除""内所有内容</p>
+					<p class="fragment"> "IndexController@user" 删除Index并继续编写</p>
 				</section>
 
 				<section>
 					<h1>寄存器</h1>
-					 <p>基本寄存器yy p</p>
-					 <p>同时使用多个带命名的寄存器</p>
-					<p>Visual模式先选中，然后 "ay 复制，"ap 粘贴，a 为寄存器名，可同时使用多个</p>
+					 <p class="fragment">基本寄存器yy p</p>
+					 <p class="fragment">同时使用多个带命名的寄存器</p>
+					<p class="fragment">Visual模式先选中，然后 "ay 复制，"ap 粘贴，a 为寄存器名，可同时使用多个</p>
 				</section>
 
 				<section>
 					<h1> Vimrc 的基本配置</h1>
-					<p> Vimrc包含了Vim运行时各种可选的及自定义的配置选项</p>
-					<p> .vimrc/_vimrc Linux/Windows</p>
+					<p class="fragment"> Vimrc包含了Vim运行时各种可选的及自定义的配置选项</p>
+					<p class="fragment"> .vimrc/_vimrc Linux/Windows</p>
 				</section>
 
 				<section>
@@ -126,16 +126,16 @@
 
 				<section>
 					<h1> Vim的多屏 </h1>
-					<p> Terminal->Tab->Tmux/Screen/Byobu->T/S/B Tab</p>
-					<p> Vim Tab -> Split/Vsplit</p>
+					<p class="fragment"> Terminal->Tab->Tmux/Screen/Byobu->T/S/B Tab</p>
+					<p class="fragment"> Vim Tab -> Split/Vsplit</p>
 				</section>
 
 
 				<section>
 					<h1> Vim的书签 </h1>
-					<p> m{a-zA-Z}</p>
-					<p> '{a-zA-Z}</p>
-					<p> marks</p>
+					<p class="fragment"> m{a-zA-Z}</p>
+					<p class="fragment"> '{a-zA-Z}</p>
+					<p class="fragment"> marks</p>
 				</section>
 
 				<section>
@@ -150,27 +150,27 @@
 
 				<section>
 					<h1>Tabs</h1>
-					<p>比如定制PHP的tab键</p>
-					<p>ftplugin/php.vim</p>
-					<p>set tabstop=4</p>
+					<p class="fragment">比如定制PHP的tab键</p>
+					<p class="fragment">ftplugin/php.vim</p>
+					<p class="fragment">set tabstop=4</p>
                     <pre><code data-trim data-noescape>
 						:help tabstop
 					</code></pre>
-					<p>Number of spaces that a Tab in the file counts for</p>
-					<p>其它选项如shiftwidth softtabstop expandtab</p>
+					<p class="fragment">Number of spaces that a Tab in the file counts for</p>
+					<p class="fragment">其它选项如shiftwidth softtabstop expandtab</p>
 				</section>
 
 				<section>
 					<h1>Vim文件编码 </h1>
-					<p> fileencoding:Sets the character encoding for the file of this buffer</p>
-					<p>Vim对于文件编码的识别</p>
-					<p>Vim对于文件编码的转换</p>
-					<p>:set fileencoding=  按Tab</p>
+					<p class="fragment"> fileencoding:Sets the character encoding for the file of this buffer</p>
+					<p class="fragment">Vim对于文件编码的识别</p>
+					<p class="fragment">Vim对于文件编码的转换</p>
+					<p class="fragment">:set fileencoding=  按Tab</p>
 				</section>
 
 				<section>
 					<h1> 插件的寻找与安装</h1>
-					<p>http://www.vim.org/scripts/ </p>
+					<p class="fragment">http://www.vim.org/scripts/ </p>
                 </section>
 
 				<section>
@@ -179,54 +179,93 @@
 
 				<section>
 					<h1> PHP相关的Vim配置 </h1>
-					<p>syntax on/custom</p>
-					<p>custom manual</p>
-					<p>custom autoComplete</p>
-					<p>custom Theme</p>
-					<p>custom Doc generator</p>
-					<p>Ctags</p>
-					<p>.....</p>
+					<p class="fragment">syntax on/custom</p>
+					<p class="fragment">custom manual</p>
+					<p class="fragment">custom autoComplete</p>
+					<p class="fragment">custom Theme</p>
+					<p class="fragment">custom Doc generator</p>
+					<p class="fragment">Ctags</p>
+					<p class="fragment">.....</p>
 				</section>
 
 				<section>
 					<h1> Vim调用外部命令 </h1>
-					<p> :!ls /var/www</p>
-					<p> :r !ls /var/www</p>
+					<p class="fragment"> :!ls /var/www</p>
+					<p class="fragment"> :r !ls /var/www</p>
 				</section>
 
                 <section>
                     <h1>Vim 组合命令</h1>
-                    <p>:g/s*^$/d 删除所有空行</p>
-                    <p>:g!/^dd/d 删除不含字符串'dd'的行</p>
-					<p>.....</p>
+                    <p class="fragment">:g/s*^$/d 删除所有空行</p>
+                    <p class="fragment">:g!/^dd/d 删除不含字符串'dd'的行</p>
+					<p class="fragment">.....</p>
                 </section>
 
                 <section>
                     <h1> vim配置文件的管理 </h1>
-                    <p> 吸收别人的好的配置文件</p>
-                    <p> 维护自己的配置文件 </p>
-                    <p> 纳入Git进行控制和维护 </p>
+                    <p class="fragment"> 吸收别人的好的配置文件</p>
+                    <p class="fragment"> 维护自己的配置文件 </p>
+                    <p class="fragment"> 纳入Git进行控制和维护 </p>
                 </section>
 
                 <section>
-                    <p>怎么学Vim</p>
-                    <p>练习练习再练习</p>
-                    <p>思考思考再思考</p>
-                    <p>只选择自己需要的功能</p>
-                    <p>部分快捷键先记后忘</p>
-                    <p>Vim 101 Hacks.pdf</p>
+                    <p class="fragment">怎么学Vim</p>
+                    <p class="fragment">练习练习再练习</p>
+                    <p class="fragment">思考思考再思考</p>
+                    <p class="fragment">只选择自己需要的功能</p>
+                    <p class="fragment">部分快捷键先记后忘</p>
+                    <p class="fragment">Vim 101 Hacks.pdf</p>
                 </section>
 
                 <section>
-                    <h1>And Linux ?</h1>
+                    <h1>Git</h1>
+					<p class="fragment">什么是版本控制？</p>
+					<p class="fragment">版本控制是一套可以记录文件更改并对其进行回顾的系统</p>
+					<p class="fragment">简单的说，Who did what in when</p>
                 </section>
 
-					<section>
-						<h1>Thanks to All !</h1>
-						</section>
+                <section>
+                    <h1>Git VS Svn</h1>
+                    <p class="fragment">超快(本地commit,不依赖网络)</p>
+                    <p class="fragment">去中心化(解决svn服务器单点故障的问题)</p>
+                    <p class="fragment">轻量级且易用的branch(复制 vs 指针)</p>
+                </section>
 
+                <section>
+                    <h1>常用的git命令</h1>
+                    <p class="fragment">git init</p>
+                    <p class="fragment">git add</p>
+                    <p class="fragment">git commit</p>
+                    <p class="fragment">git status</p>
+                    <p class="fragment">git pull</p>
+                    <p class="fragment">git push</p>
+                    <p class="fragment">git log</p>
+                </section>
 
+                    <section>
+                        <h1>git clone</h1>
+                        <p class="fragment">file://</p>
+                        <p class="fragment">ssh://</p>
+                        <p class="fragment">git://</p>
+                        <p class="fragment">http:// https://</p>
+                    </section>
 
+                <section>
+                    <h1>操作撤销和失误挽救</h1>
+                    <p class="fragment">git revert 9a3fiz</p>
+                    <p class="fragment">git commit --amend</p>
+                    <p class="fragment">git checkout z86swe filename</p>
+                    <p class="fragment">git reset s87se9</p>
+                </section>
+
+                    <section>
+                        <h1>操作撤销和失误挽救</h1>
+                        <p class="fragment">git commit --amend</p>
+                        <p class="fragment">git checkout z86swe filename</p>
+                        <p class="fragment">git reset s87se9</p>
+                        <p class="fragment">git revert 9a3fiz</p>
+                        <p class="fragment">reset vs revert</p>
+                    </section>
 
 			</div>
 		</div>
