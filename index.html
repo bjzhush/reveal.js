@@ -26,9 +26,8 @@
 			<div class="slides">
 				<section>
 					<h1>Vim 是什么？</h1>
-					<p class="fragment">
-						Vim 是这个星球上最好的编辑器
-					</p>
+					<p class="fragment"> Vim 是这个星球上最好的编辑器 </p>
+                    <p class="fragment"> Vim 是几乎所有Linux发行版都会自带的编辑器 </p>
 				</section>
 
 				<section>
@@ -257,15 +256,91 @@
                 </section>
 
                 <section>
+                    <h1>多种多样的git log</h1>
+                </section>
+
+                <section>
+                    <h1>查看版本号及commit信息</h1>
+                    <p>git log --oneline --no-merges</p>
+                </section>
+                <section data-background-image="./image/gitlog3.png" data-background-size="contain">
+                </section>
+
+                <section>
+                    <h1>查看提交者，时间，commit信息</h1>
+                    <p>git log --pretty=format:"%h%x09%an%x09%ad%x09%s"</p>
+                </section>
+				<section data-background-image="./image/gitlog1.png" data-background-size="contain">
+				</section>
+
+                <section>
+                    <h1>查看改动的文件及行数</h1>
+                    <p>git log --stat</p>
+                </section>
+                <section data-background-image="./image/gitlog2.png" data-background-size="contain">
+                </section>
+
+                <section>
+                    <h1>查看提交的详情</h1>
+                    <p>git log -p commitid</p>
+                    <h1>查看某次提交的详情</h1>
+                    <p>git show commitid</p>
+                </section>
+                <section data-background-image="./image/gitlog4.png" data-background-size="contain">
+                </section>
+
+                <section>
+                    <h1>查看指定文件指定2次提交之间的差异</h1>
+                </section>
+                <section data-background-image="./image/gitdiff2.png" data-background-size="contain">
+                </section>
+
+
+                <section>
+                    <h1>根据关键词搜索提交的log</h1>
+                    <p>git log -S "EsService"</p>
+                    <p>git log -S "EsService" -p</p>
+                    <p>git log -S "EsService" --name-only</p>
+                </section>
+                <section data-background-image="./image/gitlog5.png" data-background-size="contain">
+                </section>
+
+                <section>
+                    <h1>其它常用log</h1>
+                    <p>查看多个目录或文件的log : git log -- /path1 /path2/file</p>
+                    <p>查看某人的log : git log --author=username</p>
+                </section>
+
+                <section>
                     <h1>git merge</h1>
                     <p class="fragment">Merge遇到冲突如何解决？</p>
+                    <p class="fragment">首先新建一个文件，然后在master和debug分支对其分别修改和提交</p>
                 </section>
                 <section data-background-image="./image/master.png" data-background-size="contain">
                 </section>
                 <section data-background-image="./image/debug.png" data-background-size="contain">
                 </section>
+                <section>
+                    <p>在merge时出现冲突，对其进行手动修改，然后git add并提交进行解决</p>
+                </section>
                 <section data-background-image="./image/conflictresolved.png" data-background-size="contain">
                 </section>
+
+
+                <section>
+                    <h1>git diff</h1>
+                    <p class="fragment">git diff</p>
+                    <p class="fragment">git diff --cached</p>
+                </section>
+
+                <section>
+                    <p>Merge之前查看在debug分支有而master分支没有的提交</p>
+                    <p class="fragment">git diff master..debug</p>
+                    <p class="fragment">git log master..debug</p>
+                </section>
+                <section data-background-image="./image/gitdiff1.png" data-background-size="contain">
+                </section>
+
 
 
                 <section>
@@ -284,6 +359,13 @@
                         <p class="fragment">git revert 9a3fiz</p>
                         <p class="fragment">reset vs revert</p>
                     </section>
+
+                <section>
+                    <h1 class="fragmented">git clean</h1>
+                    <p class="fragment">删除没有在版本控制的文件</p>
+                </section>
+                <section data-background-image="./image/gitclean1.png" data-background-size="contain">
+                </section>
 
                 <section>
                     <h1 class="fragmented">跟踪文件的最后编辑者</h1>
@@ -355,6 +437,13 @@
                     <h1 class="fragmented">集成管理者式工作流</h1>
                 </section>
                 <section data-background-image="./image/flow2.png" data-background-size="contain">
+                </section>
+
+                <section>
+                    <h1 class="fragmented">一点建议</h1>
+                    <p>多使用命令行，少使用GUI工具</p>
+                    <p>使用man命令最快的查询帮助文档</p>
+                    <p>定制自己的config文件和alias脚本</p>
                 </section>
 
                 <section>
