@@ -38,12 +38,15 @@
 
                 <section>
 					<h1>Vim 是什么？</h1>
-					<p class="fragment highlight-blue"> Vim 被誉为编辑器之神 </p>
+                    <p class="fragment highlight-blue"> Vim 是一个编辑器 </p>
                     <p class="fragment highlight-blue"> Vim 是几乎所有Linux发行版都会自带的编辑器 </p>
                     <p class="fragment highlight-blue"> Vim 是ssh到远程linux时几乎唯一可以使用的编辑器 </p>
-                    <p class="fragment highlight-blue"> Vim 是可以让你写代码时编辑速度从走到跑到飞的编辑器</p>
-                    <p class="fragment highlight-blue"> Vim 是一个不那么容易上手的编辑器</p>
+                    <p class="fragment highlight-blue"> Vim 是可以让你写代码时飞一样编辑的编辑器</p>
+                    <p class="fragment highlight-blue"> Vim 是一个难以上手但是威力巨大的编辑器</p>
 				</section>
+
+                <section data-background-image="./image/vim10002.png" data-background-size="contain">
+                </section>
 
 				<section data-transition="zoom">
 					<h2>Vi 和 Vim 的区别与联系</h2>
@@ -55,12 +58,6 @@
 					</p>
 				</section>
 
-				<section>
-					<h1>Vim的最大特点</h1>
-					<p  class="fragment highlight-blue">自身功能强大</p>
-					<p  class="fragment highlight-blue">插件超级多，覆盖各个方面</p>
-					<p  class="fragment highlight-blue">可根据自己的需求高度定制</p>
-				</section>
 
 				<section data-transition="zoom">
 					<h1>为什么要用Vim</h1>
@@ -77,6 +74,13 @@
 					<p class="fragment highlight-blue"> PHPStorm的IdeaVim插件</p>
 				</section>
 
+                <section>
+                    <h1>Vim的最大特点</h1>
+                    <p  class="fragment highlight-blue">内置功能强大</p>
+                    <p  class="fragment highlight-blue">插件超级多，覆盖各个方面</p>
+                    <p  class="fragment highlight-blue">可根据自己的需求定制最顺手的配置</p>
+                </section>
+
 				<section data-transition="zoom">
 					<h1>Vim Mode</h1>
 					<p class="fragment highlight-blue"> Normal Mode </p>
@@ -84,21 +88,27 @@
 					<p class="fragment highlight-blue"> Visual Mode </p>
 				</section>
 
+                <section data-background-image="./image/vim10003.gif" data-background-size="contain">
+                </section>
+
 				<section>
 					<h1>基本使用之移动举例</h1>
 					<p class="fragment highlight-blue"> 字符/单词/行/句/段落/屏/页/文件 </p>
 					<p class="fragment highlight-blue"> HJKL </p>
-					<p class="fragment highlight-blue"> 行内一步移动到任意位置 </p>
-					<p class="fragment highlight-blue"> 文件内一步移动到目标行 </p>
+					<p class="fragment highlight-blue"> 行内快速移动到任意位置 </p>
+					<p class="fragment highlight-blue"> 文件内快速移动到目标行 </p>
 					<p class="fragment highlight-blue"> () { } </p>
 				</section>
 
+                <section data-background-image="./image/vim10001.png" data-background-size="contain">
+                </section>
+
 				<section data-transition="zoom">
 					<h1>基本使用之编辑举例</h1>
-					<p class="fragment highlight-blue"> i/a  </p>
-					<p class="fragment highlight-blue"> I/A  </p>
-					<p class="fragment highlight-blue"> o/O  </p>
-					<p class="fragment highlight-blue"> d/c  </p>
+					<p class="fragment highlight-blue"> i/a  在当前光标前后插入</p>
+					<p class="fragment highlight-blue"> I/A  在行首行末插入</p>
+					<p class="fragment highlight-blue"> o/O  在下一行上一行插入</p>
+					<p class="fragment highlight-blue"> s    删除当前字符并继续插入  </p>
 				</section>
 
 				<section>
@@ -111,11 +121,13 @@
 				</section>
 
 				<section data-transition="zoom">
-					<h1>基本使用之块编辑举例</h1>
-					<p class="fragment highlight-blue"> 重构时删除function内所有内容</p>
-					<p class="fragment highlight-blue"> "IndexController@user" 删除""内所有内容</p>
-					<p class="fragment highlight-blue"> "IndexController@user" 删除Index并继续编写</p>
+					<h1>基本使用之块编辑示例</h1>
+					<p class="fragment highlight-blue"> 将原有的_ad_index改为从POST的ad_index中取</p>
+                    <p class="fragment highlight-blue"> 删除所有logWrite方法中|||之前的内容</p>
+                    <p class="fragment highlight-blue"> 清空所有_fail方法中的返回值</p>
 				</section>
+                <section data-background-image="./image/vim10004.gif" data-background-size="contain">
+                </section>
 
 				<section>
 					<h1>寄存器</h1>
@@ -127,7 +139,8 @@
 				<section data-transition="zoom">
 					<h1> Vimrc 的基本配置</h1>
 					<p class="fragment highlight-blue"> Vimrc包含了Vim运行时各种可选的及自定义的配置选项</p>
-					<p class="fragment highlight-blue"> .vimrc/_vimrc Linux/Windows</p>
+					<p class="fragment highlight-blue"> Linux   .vimrc</p>
+                    <p class="fragment highlight-blue"> Windows   _vimrc</p>
 				</section>
 
 				<section>
@@ -139,9 +152,11 @@
 				</section>
 
 				<section data-transition="zoom">
-					<h1> Vim的多屏 </h1>
-					<p class="fragment highlight-blue"> Terminal->Tab->Tmux/Screen/Byobu->T/S/B Tab</p>
+					<h1> 同时编辑多个文件 </h1>
+					<p class="fragment highlight-blue"> Terminal->Tab</p>
 					<p class="fragment highlight-blue"> Vim Tab -> Split/Vsplit</p>
+                    <p class="fragment highlight-blue"> nnoremap F8 :tabp </p>
+                    <p class="fragment highlight-blue"> nnoremap F9 :tabn </p>
 				</section>
 
 
@@ -164,14 +179,9 @@
 
 				<section>
 					<h1>Tabs</h1>
-					<p class="fragment highlight-blue">比如定制PHP的tab键</p>
+					<p class="fragment highlight-blue">比如定制PHP的tab键为4个空格</p>
 					<p class="fragment highlight-blue">ftplugin/php.vim</p>
 					<p class="fragment highlight-blue">set tabstop=4</p>
-                    <pre><code data-trim data-noescape>
-						:help tabstop
-					</code></pre>
-					<p class="fragment highlight-blue">Number of spaces that a Tab in the file counts for</p>
-					<p class="fragment highlight-blue">其它选项如shiftwidth softtabstop expandtab</p>
 				</section>
 
 				<section data-transition="zoom">
@@ -222,11 +232,11 @@
                 </section>
 
                 <section data-transition="zoom">
-                    <p class="fragment highlight-blue">怎么学Vim</p>
-                    <p class="fragment highlight-blue">只选择自己需要的功能</p>
-                    <p class="fragment highlight-blue">从记到忘，从需要思考到无意识的操作</p>
+                    <h3>几点建议</h3>
+                    <p class="fragment highlight-blue">只选择自己需要的功能,不贪多求全</p>
+                    <p class="fragment highlight-blue">禁用光标键</p>
                     <p class="fragment highlight-blue">Vim 101 Hacks.pdf</p>
-                    <p class="fragment highlight-blue">如何才能坚持？？？安装vim并一直使用</p>
+                    <p class="fragment highlight-blue">如何才能坚持？安装vim并一直使用</p>
                 </section>
 
                 <section>
