@@ -78,7 +78,7 @@
                     <h1>Vim的最大特点</h1>
                     <p  class="fragment highlight-blue">内置功能强大</p>
                     <p  class="fragment highlight-blue">插件超级多，覆盖各个方面</p>
-                    <p  class="fragment highlight-blue">可根据自己的需求定制最顺手的配置</p>
+                    <p  class="fragment highlight-blue">可根据自己的需求定制最适合自己的配置</p>
                 </section>
 
 				<section data-transition="zoom">
@@ -138,21 +138,9 @@
 					 <p class="fragment highlight-blue">同时使用多个带命名的寄存器</p>
 					<p class="fragment highlight-blue">Visual模式先选中，然后 "ay 复制，"ap 粘贴，a 为寄存器名，可同时使用多个</p>
 				</section>
+                <section data-background-image="./image/vim10005.gif" data-background-size="contain">
+                </section>
 
-				<section data-transition="zoom">
-					<h1> Vimrc 的基本配置</h1>
-					<p class="fragment highlight-blue"> Vimrc包含了Vim运行时各种可选的及自定义的配置选项</p>
-					<p class="fragment highlight-blue"> Linux   .vimrc</p>
-                    <p class="fragment highlight-blue"> Windows   _vimrc</p>
-				</section>
-
-				<section>
-					<h1> Vim Script Language</h1>
-
-                    <pre><code data-trim data-noescape>
-						:h usr_41.txt
-					</code></pre>
-				</section>
 
 				<section data-transition="zoom">
 					<h1> 同时编辑多个文件 </h1>
@@ -165,9 +153,10 @@
 
 				<section>
 					<h1> Vim的书签 </h1>
-					<p class="fragment highlight-blue"> m{a-zA-Z}</p>
-					<p class="fragment highlight-blue"> '{a-zA-Z}</p>
-					<p class="fragment highlight-blue"> marks</p>
+					<p class="fragment highlight-blue"> m{a-zA-Z} 创建一个书签</p>
+					<p class="fragment highlight-blue"> '{a-zA-Z} 跳到书签行首</p>
+                    <p class="fragment highlight-blue"> `{a-zA-Z} 跳到书签行及列</p>
+                    <p class="fragment highlight-blue"> `` 跳到上次所在位置（仅书签动作，hjkl不算）</p>
 				</section>
 
 				<section data-transition="zoom">
@@ -175,10 +164,9 @@
                     <pre><code data-trim data-noescape>
 						:filetype
 					</code></pre>
-                    <pre><code data-trim data-noescape>
-						detection:ON plugin:ON indent:ON
-					</code></pre>
 				</section>
+                <section data-background-image="./image/vim10006.png" data-background-size="contain">
+                </section>
 
 				<section>
 					<h1>Tabs</h1>
@@ -195,6 +183,21 @@
 					<p class="fragment highlight-blue">:set fileencoding=  按Tab</p>
 				</section>
 
+                <section data-transition="zoom">
+                    <h1> Vimrc 的基本配置</h1>
+                    <p class="fragment highlight-blue"> Vimrc包含了Vim运行时各种可选的及自定义的配置选项</p>
+                    <p class="fragment highlight-blue"> Linux 下  .vimrc</p>
+                    <p class="fragment highlight-blue"> Windows 下  _vimrc</p>
+                </section>
+
+                <section>
+                    <h1> Vim Script Language</h1>
+
+                    <pre><code data-trim data-noescape>
+                        :h usr_41.txt
+                    </code></pre>
+                </section>
+
 				<section>
 					<h1> 插件的寻找与安装</h1>
 					<p class="fragment highlight-blue">http://www.vim.org/scripts/ </p>
@@ -210,8 +213,6 @@
 					<p class="fragment highlight-blue">custom autoComplete</p>
 					<p class="fragment highlight-blue">custom Theme</p>
 					<p class="fragment highlight-blue">custom Doc generator</p>
-					<p class="fragment highlight-blue">Ctags</p>
-					<p class="fragment highlight-blue">.....</p>
 				</section>
 
 				<section>
@@ -224,7 +225,7 @@
                     <h1>Vim 组合命令</h1>
                     <p class="fragment highlight-blue">:g/s*^$/d 删除所有空行</p>
                     <p class="fragment highlight-blue">:g!/^dd/d 删除不含字符串'dd'的行</p>
-					<p class="fragment highlight-blue">.....</p>
+					<p class="fragment highlight-blue">其它组合正则相关的命令</p>
                 </section>
 
                 <section>
@@ -240,6 +241,10 @@
                     <p class="fragment highlight-blue">禁用光标键</p>
                     <p class="fragment highlight-blue">Vim 101 Hacks.pdf</p>
                     <p class="fragment highlight-blue">如何才能坚持？安装vim并一直使用</p>
+                </section>
+
+                <section>
+                    <h1> Git </h1>
                 </section>
 
                 <section>
